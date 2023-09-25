@@ -29,7 +29,7 @@ namespace SchoolManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtusername = new System.Windows.Forms.TextBox();
+            this.txtguardname = new System.Windows.Forms.TextBox();
             this.lbluname = new System.Windows.Forms.Label();
             this.rbtothers = new System.Windows.Forms.RadioButton();
             this.rbtfemale = new System.Windows.Forms.RadioButton();
@@ -37,14 +37,14 @@ namespace SchoolManagementSystem
             this.btnclear = new System.Windows.Forms.Button();
             this.btnAdmit = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtpassword = new System.Windows.Forms.TextBox();
+            this.txtaddress = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbouesrtype = new System.Windows.Forms.ComboBox();
+            this.cboclasslevel = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtphone = new System.Windows.Forms.TextBox();
+            this.txtgardphone = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtlname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,13 +55,13 @@ namespace SchoolManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.studentphoto)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtusername
+            // txtguardname
             // 
-            this.txtusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusername.Location = new System.Drawing.Point(467, 352);
-            this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(299, 35);
-            this.txtusername.TabIndex = 51;
+            this.txtguardname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtguardname.Location = new System.Drawing.Point(467, 352);
+            this.txtguardname.Name = "txtguardname";
+            this.txtguardname.Size = new System.Drawing.Size(299, 35);
+            this.txtguardname.TabIndex = 51;
             // 
             // lbluname
             // 
@@ -108,7 +108,7 @@ namespace SchoolManagementSystem
             // 
             // btnclear
             // 
-            this.btnclear.Location = new System.Drawing.Point(641, 698);
+            this.btnclear.Location = new System.Drawing.Point(675, 720);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(125, 66);
             this.btnclear.TabIndex = 46;
@@ -117,12 +117,13 @@ namespace SchoolManagementSystem
             // 
             // btnAdmit
             // 
-            this.btnAdmit.Location = new System.Drawing.Point(389, 698);
+            this.btnAdmit.Location = new System.Drawing.Point(423, 720);
             this.btnAdmit.Name = "btnAdmit";
             this.btnAdmit.Size = new System.Drawing.Size(202, 66);
             this.btnAdmit.TabIndex = 45;
             this.btnAdmit.Text = "Admit Student";
             this.btnAdmit.UseVisualStyleBackColor = true;
+            this.btnAdmit.Click += new System.EventHandler(this.btnAdmit_Click);
             // 
             // label7
             // 
@@ -134,14 +135,14 @@ namespace SchoolManagementSystem
             this.label7.TabIndex = 43;
             this.label7.Text = "Photo";
             // 
-            // txtpassword
+            // txtaddress
             // 
-            this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpassword.Location = new System.Drawing.Point(467, 466);
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.PasswordChar = '*';
-            this.txtpassword.Size = new System.Drawing.Size(299, 35);
-            this.txtpassword.TabIndex = 42;
+            this.txtaddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtaddress.Location = new System.Drawing.Point(467, 466);
+            this.txtaddress.Name = "txtaddress";
+            this.txtaddress.PasswordChar = '*';
+            this.txtaddress.Size = new System.Drawing.Size(299, 35);
+            this.txtaddress.TabIndex = 42;
             // 
             // label6
             // 
@@ -171,25 +172,25 @@ namespace SchoolManagementSystem
             this.label5.TabIndex = 39;
             this.label5.Text = "Email";
             // 
-            // cbouesrtype
+            // cboclasslevel
             // 
-            this.cbouesrtype.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbouesrtype.FormattingEnabled = true;
-            this.cbouesrtype.Items.AddRange(new object[] {
-            "One",
-            "Two",
-            "Three",
-            "Four",
-            "Five",
-            "Six",
-            "Seven",
-            "Eight",
-            "Nine",
-            "Ten"});
-            this.cbouesrtype.Location = new System.Drawing.Point(467, 293);
-            this.cbouesrtype.Name = "cbouesrtype";
-            this.cbouesrtype.Size = new System.Drawing.Size(299, 37);
-            this.cbouesrtype.TabIndex = 38;
+            this.cboclasslevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboclasslevel.FormattingEnabled = true;
+            this.cboclasslevel.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cboclasslevel.Location = new System.Drawing.Point(467, 293);
+            this.cboclasslevel.Name = "cboclasslevel";
+            this.cboclasslevel.Size = new System.Drawing.Size(299, 37);
+            this.cboclasslevel.TabIndex = 38;
             // 
             // label4
             // 
@@ -211,14 +212,14 @@ namespace SchoolManagementSystem
             this.label3.TabIndex = 36;
             this.label3.Text = "Gender";
             // 
-            // txtphone
+            // txtgardphone
             // 
-            this.txtphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtphone.Location = new System.Drawing.Point(467, 170);
-            this.txtphone.MaxLength = 14;
-            this.txtphone.Name = "txtphone";
-            this.txtphone.Size = new System.Drawing.Size(299, 35);
-            this.txtphone.TabIndex = 35;
+            this.txtgardphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgardphone.Location = new System.Drawing.Point(467, 170);
+            this.txtgardphone.MaxLength = 14;
+            this.txtgardphone.Name = "txtgardphone";
+            this.txtgardphone.Size = new System.Drawing.Size(299, 35);
+            this.txtgardphone.TabIndex = 35;
             // 
             // label2
             // 
@@ -268,9 +269,10 @@ namespace SchoolManagementSystem
             // 
             // studentphoto
             // 
-            this.studentphoto.Location = new System.Drawing.Point(467, 543);
+            this.studentphoto.Location = new System.Drawing.Point(509, 518);
             this.studentphoto.Name = "studentphoto";
-            this.studentphoto.Size = new System.Drawing.Size(299, 126);
+            this.studentphoto.Size = new System.Drawing.Size(228, 171);
+            this.studentphoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.studentphoto.TabIndex = 52;
             this.studentphoto.TabStop = false;
             // 
@@ -280,8 +282,9 @@ namespace SchoolManagementSystem
             this.btnupload.Name = "btnupload";
             this.btnupload.Size = new System.Drawing.Size(125, 66);
             this.btnupload.TabIndex = 53;
-            this.btnupload.Text = "Sign Up";
+            this.btnupload.Text = "Upload";
             this.btnupload.UseVisualStyleBackColor = true;
+            this.btnupload.Click += new System.EventHandler(this.btnupload_Click);
             // 
             // Admission
             // 
@@ -290,7 +293,7 @@ namespace SchoolManagementSystem
             this.ClientSize = new System.Drawing.Size(1018, 816);
             this.Controls.Add(this.btnupload);
             this.Controls.Add(this.studentphoto);
-            this.Controls.Add(this.txtusername);
+            this.Controls.Add(this.txtguardname);
             this.Controls.Add(this.lbluname);
             this.Controls.Add(this.rbtothers);
             this.Controls.Add(this.rbtfemale);
@@ -298,14 +301,14 @@ namespace SchoolManagementSystem
             this.Controls.Add(this.btnclear);
             this.Controls.Add(this.btnAdmit);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtpassword);
+            this.Controls.Add(this.txtaddress);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.cbouesrtype);
+            this.Controls.Add(this.cboclasslevel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtphone);
+            this.Controls.Add(this.txtgardphone);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtlname);
             this.Controls.Add(this.label1);
@@ -321,7 +324,7 @@ namespace SchoolManagementSystem
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtusername;
+        private System.Windows.Forms.TextBox txtguardname;
         private System.Windows.Forms.Label lbluname;
         private System.Windows.Forms.RadioButton rbtothers;
         private System.Windows.Forms.RadioButton rbtfemale;
@@ -329,14 +332,14 @@ namespace SchoolManagementSystem
         private System.Windows.Forms.Button btnclear;
         private System.Windows.Forms.Button btnAdmit;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtpassword;
+        private System.Windows.Forms.TextBox txtaddress;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cbouesrtype;
+        private System.Windows.Forms.ComboBox cboclasslevel;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtphone;
+        private System.Windows.Forms.TextBox txtgardphone;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtlname;
         private System.Windows.Forms.Label label1;

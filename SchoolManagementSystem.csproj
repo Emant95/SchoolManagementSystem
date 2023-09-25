@@ -156,5 +156,11 @@
   <ItemGroup>
     <None Include="Resources\studentpic.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StudentManagementBLL\StudentManagementBLL.csproj">
+      <Project>{17704ed6-8242-4be7-8a27-b466bffe63f5}</Project>
+      <Name>StudentManagementBLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
