@@ -46,5 +46,11 @@ namespace SchoolManagementSystem
         {
             tssltime.Text = DateTime.Now.ToString();
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Admission frm = new Admission();
+            frm.Show();
+        }
     }
 }
