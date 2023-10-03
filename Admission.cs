@@ -53,8 +53,8 @@ namespace SchoolManagementSystem
         public AppSettingsReader aps = new AppSettingsReader();
         private void btnAdmit_Click(object sender, EventArgs e)
         {
-            AdmissionBLL chkstd = new AdmissionBLL();
-            bool exists = chkstd.checkStudent(txtfname.Text, txtlname.Text, txtemail.Text);
+            AdmissionBLL admission = new AdmissionBLL();
+            bool exists = admission.checkStudent(txtfname.Text, txtlname.Text, txtemail.Text);
             if (exists)
             {
                 MessageBox.Show("Student already exists");
@@ -77,7 +77,6 @@ namespace SchoolManagementSystem
 
             else
             {
-                AdmissionBLL admission = new AdmissionBLL();
                 MemoryStream ms = new MemoryStream();
                 studentphoto.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
                 byte[] pic = ms.ToArray();
@@ -88,15 +87,16 @@ namespace SchoolManagementSystem
                     gender = "F";
                 else
                     gender = "Others";
+
                 admission.FirstName = txtfname.Text;
                 admission.LastName = txtlname.Text;
                 admission.GuardianPhone = txtgardphone.Text;
                 admission.Gender = gender;
-                admission.ClassLevel = Convert.ToInt32(cboclasslevel.SelectedItem);
+                admission.ClassLevel = Convert.ToInt32(cboclasslevel.Text);
                 admission.GuardianName = txtguardname.Text;
                 admission.Email = txtemail.Text;
                 admission.Address = txtaddress.Text;
-                admission.RollNo = 1;
+                admission.RollNo = admission.GetRollNo(admission.ClassLevel);
                 admission.AdmissionDate = DateTime.Now;
                 admission.AdmissionStatus = 0;
                 admission.Photo = pic;

@@ -52,5 +52,11 @@ namespace SchoolManagementSystem
             Admission frm = new Admission();
             frm.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Student_List std = new Student_List();
+            std.Show();
+        }
     }
 }
