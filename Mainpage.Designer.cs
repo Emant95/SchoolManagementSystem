@@ -73,9 +73,6 @@ namespace SchoolManagementSystem
             this.systemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.balanceEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,6 +81,7 @@ namespace SchoolManagementSystem
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hELPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -91,7 +89,9 @@ namespace SchoolManagementSystem
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -259,7 +259,7 @@ namespace SchoolManagementSystem
             this.loanHistoryToolStripMenuItem,
             this.addMarksToolStripMenuItem});
             this.loanToolStripMenuItem.Name = "loanToolStripMenuItem";
-            this.loanToolStripMenuItem.Size = new System.Drawing.Size(124, 64);
+            this.loanToolStripMenuItem.Size = new System.Drawing.Size(124, 62);
             this.loanToolStripMenuItem.Text = "Examination";
             // 
             // loanHistoryToolStripMenuItem
@@ -358,7 +358,7 @@ namespace SchoolManagementSystem
             this.viewCustomersToolStripMenuItem,
             this.addCustomersToolStripMenuItem});
             this.customersToolStripMenuItem.Name = "customersToolStripMenuItem";
-            this.customersToolStripMenuItem.Size = new System.Drawing.Size(97, 64);
+            this.customersToolStripMenuItem.Size = new System.Drawing.Size(97, 62);
             this.customersToolStripMenuItem.Text = "Students";
             // 
             // deleteToolStripMenuItem
@@ -446,7 +446,7 @@ namespace SchoolManagementSystem
             this.closeAllToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.systemToolStripMenuItem.Name = "systemToolStripMenuItem";
-            this.systemToolStripMenuItem.Size = new System.Drawing.Size(85, 64);
+            this.systemToolStripMenuItem.Size = new System.Drawing.Size(85, 62);
             this.systemToolStripMenuItem.Text = "System";
             // 
             // exitToolStripMenuItem
@@ -471,34 +471,6 @@ namespace SchoolManagementSystem
             this.toolStrip1.Stretch = true;
             this.toolStrip1.TabIndex = 33;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(54, 109);
-            this.toolStripButton1.Text = "Admission";
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(54, 109);
-            this.toolStripButton2.Text = "MarkSheet";
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(54, 109);
-            this.toolStripButton3.Text = "Student Dues";
             // 
             // menuStrip1
             // 
@@ -525,7 +497,7 @@ namespace SchoolManagementSystem
             this.balancWithdrawToolStripMenuItem,
             this.toolStripMenuItem4});
             this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
-            this.accountToolStripMenuItem.Size = new System.Drawing.Size(93, 64);
+            this.accountToolStripMenuItem.Size = new System.Drawing.Size(93, 62);
             this.accountToolStripMenuItem.Text = "Account";
             // 
             // balanceEntryToolStripMenuItem
@@ -551,7 +523,7 @@ namespace SchoolManagementSystem
             this.calculatorToolStripMenuItem,
             this.wordpadToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(69, 64);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(69, 62);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // calculatorToolStripMenuItem
@@ -564,9 +536,15 @@ namespace SchoolManagementSystem
             // hELPToolStripMenuItem
             // 
             this.hELPToolStripMenuItem.Name = "hELPToolStripMenuItem";
-            this.hELPToolStripMenuItem.Size = new System.Drawing.Size(68, 64);
+            this.hELPToolStripMenuItem.Size = new System.Drawing.Size(68, 62);
             this.hELPToolStripMenuItem.Text = "HELP";
             this.hELPToolStripMenuItem.Click += new System.EventHandler(this.hELPToolStripMenuItem_Click);
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(1178, 489);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 53;
             // 
             // pictureBox4
             // 
@@ -591,6 +569,7 @@ namespace SchoolManagementSystem
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 48;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox6
             // 
@@ -652,11 +631,33 @@ namespace SchoolManagementSystem
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
             // 
-            // monthCalendar1
+            // toolStripButton1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(1178, 489);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 53;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(54, 109);
+            this.toolStripButton1.Text = "Admission";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(54, 109);
+            this.toolStripButton2.Text = "MarkSheet";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(54, 109);
+            this.toolStripButton3.Text = "Student Dues";
             // 
             // Mainpage
             // 
